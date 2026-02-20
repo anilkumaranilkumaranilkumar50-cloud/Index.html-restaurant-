@@ -3,15 +3,62 @@
 <head>
 <title>Gallery - Royal Spice</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body{margin:0;font-family:Arial;background:#111;color:white;text-align:center}
-nav{background:#000;padding:15px}
-nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
-nav a:hover{color:red}
-.gallery{display:flex;flex-wrap:wrap;justify-content:center;padding:40px}
-.gallery img{width:280px;margin:10px;border-radius:8px}
-footer{background:#000;padding:20px}
+body{
+    margin:0;
+    font-family:Arial;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+nav{
+    background:#000;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:red;
+}
+
+h1{
+    padding:30px 0;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+footer{
+    background:#000;
+    padding:20px;
+    margin-top:30px;
+}
 </style>
+
 </head>
 <body>
 
@@ -23,16 +70,24 @@ footer{background:#000;padding:20px}
 <a href="contact.html">Contact</a>
 </nav>
 
-<h1>Food Gallery</h1>
+<h1>Our Food & Ambience</h1>
 
 <div class="gallery">
+
 <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
 <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d">
 <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468">
 <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
+<img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+
 </div>
 
-<footer>© 2026 Royal Spice Restaurant</footer>
+<footer>
+© 2026 Royal Spice Restaurant
+</footer>
 
 </body>
 </html>
